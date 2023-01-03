@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <link rel="icon" type="images/x-icon" href="https://sanctamaria.co.in/wp-content/uploads/2022/06/Sancta-Maria-faridabad-logo.png">
 <title>Foodfund by SMISF</title>
+<link rel="stylesheet" href="style.css">
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -21,10 +23,10 @@
 <br>
 <h2 id="calculatortitle">The food calculator</h2>
 <p>Enter the portions of food you wasted today below and click submit.</p>
-<textarea style="height:30px;width: 80%;" class="form-control" placeholder="Please enter your data (in numbers) here."></textarea>
+<textarea id="portionswasted"style="height:30px;width: 80%;" class="form-control" placeholder="Please enter your data (in numbers) here."></textarea>
 <h4 id="foodforpeople">Number of people that could have eaten well ,IF you had not decided to waste food:</h4>
-<button class="btn btn-success">Submit</button>
-
+<button class="btn btn-success" onclick="calculate()">Submit</button>
+<p>Note: 1 portion is 100 grams of food</p>
 </center>
 <center>
 <div class="footer"><p>By-AG and Saaisha</p></div>
@@ -46,6 +48,7 @@
 
 
 </body>
+<script src="main.js"></script>
 
 
 
